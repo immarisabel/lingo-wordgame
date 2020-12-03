@@ -7,7 +7,7 @@ This is my first repository. I am totally new to this, so ignore most here unles
 
 *(these notes are for me to use as reference of my learning and keep the code clean once something is fixed.*
 
-#challenges to fix
+# challenges to fix
 ### Week 1 Notes:
 
 - [x] need to be able to restart game
