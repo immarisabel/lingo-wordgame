@@ -7,10 +7,10 @@ This is my first repository. I am totally new to this, so ignore most here unles
 
 *(these notes are for me to use as reference of my learning and keep the code clean once something is fixed.*
 
+#challenges to fix
 ### Week 1 Notes:
 
-- [ ] need to be able to restart game
-- [ ] game does not run after letter input, not crash, not end
+- [x] need to be able to restart game
 - [x] cuts tries remaining at +1
 - [x] cuts attempts at half the tries
 - [x] does not counts how many attempts are left
@@ -18,3 +18,7 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - [x] loops infinite when you write non-int elements
 - [x] still crashes on other input.
 - [x] jump to end of game with other numbers.
+
+### DEC 3, 2020
+- [ ] game does not run after letter input, not crash, not end, just shows blank and game stops
+- [ ] when repeating the game, the same word is always chosen.

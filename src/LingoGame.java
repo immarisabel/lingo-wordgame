@@ -1,18 +1,19 @@
 
 import java.util.Scanner;
 
-//using arraylist
 public class LingoGame {
 
 	public static void PrintResult(boolean result) {
 
 		System.out.println("Success? " + (result ? true : false));
 
+		System.out
+				.println("\n" + "Select again 1, 2 or 3 to play again!" + "\n");
+
 	}
 
 	public static void main(String[] args) {
-		// char again = 'y';
-		// while (again == 'y') {
+
 		Scanner scan = new Scanner(System.in);
 		// get words
 		final String strWord = Initializer.InitializeFromArray();
@@ -37,6 +38,7 @@ public class LingoGame {
 				tries = 15;
 			} else if (level == 3) {
 				tries = 30;
+
 			} else {
 				System.out.println("Invalid level entered, please use:" + "\n"
 						+ "1. Easy" + "\n" + "2. Medium" + "\n" + "3. Hard"
