@@ -9,12 +9,12 @@ This is my first repository. I am totally new to this, so ignore most here unles
 
 ### Week 1 Notes:
 
-	[] need to be able to restart game
-	[] game does not run after letter input, not crash, not end
-	[x] cuts tries remaining at +1
-	[x] cuts attempts at half the tries
-	[x] does not counts how many attempts are left
-	[x] it does not run the rest of the game.
-	[x] loops infinite when you write non-int elements
-	[x] still crashes on other input.
-	[x] jump to end of game with other numbers.
+[] need to be able to restart game
+[] game does not run after letter input, not crash, not end
+[x] cuts tries remaining at +1
+[x] cuts attempts at half the tries
+[x] does not counts how many attempts are left
+[x] it does not run the rest of the game.
+[x] loops infinite when you write non-int elements
+[x] still crashes on other input.
+[x] jump to end of game with other numbers.
