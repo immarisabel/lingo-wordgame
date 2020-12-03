@@ -22,3 +22,12 @@ This is my first repository. I am totally new to this, so ignore most here unles
 ### DEC 3, 2020
 - [ ] game does not run after letter input, not crash, not end, just shows blank and game stops
 - [ ] when repeating the game, the same word is always chosen.
+
+# planned implementation
+- [ ] be able to play as many times as you wish
+- [ ] have a big word list to choose from
+- [ ] create categories of words
+- [ ] multiplayer function
+- [ ] scoring system
+- [ ] store the player's progress and scores
+- [ ] GUI
