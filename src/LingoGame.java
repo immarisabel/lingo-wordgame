@@ -26,14 +26,8 @@ public class LingoGame {
 				+ "\n" + "Enter a mode:");
 		// SELECT LEVEL
 
-		// PROBLEM: game does not run after letter input, not crash, not end,
-		// SOLVED: loops infinite when you write nonint elements
-		// SOLVED: still crashes on other input.
-		// SOLVED: jump to end of game with other numbers.
-
 		while (level > 0 || level < 4 && scan.hasNextInt()) {
-			//
-			// PROBLEM : won't rerun game after selecting Y to try again
+
 			// set tries according to level
 			level = scan.nextInt();
 
@@ -49,8 +43,6 @@ public class LingoGame {
 						+ "\n" + "Enter a mode:");
 
 			}
-
-			// SOLVED: it does not run the rest of the game.
 
 			// START WORDS
 			int len = 5;
@@ -75,9 +67,7 @@ public class LingoGame {
 
 					break;
 				} else {
-					// SOLVED: cuts tries remaining at +1
-					// SOLVED: cuts attempts at half the tries
-					// SOLVED: does not counts how many attempts are left
+
 					System.out.println("\n" + "Nice try for Attempt Number "
 							+ (Attempt) + " !" + "\n" + "Try again." + "\n"
 							+ "Attempts left: " + (tries - (Attempt)) + "\n");
@@ -97,12 +87,6 @@ public class LingoGame {
 			}
 			PrintResult(wordGuessed.equals(strWord));
 
-			// PROBLEM: restart game
 		}
 	}
 }
-
-// Scanner newGame = new Scanner(System.in);
-// System.out.println("\n" + "try again? y/n");
-// again = newGame.nextLine().charAt(0);
-// newGame.close();
