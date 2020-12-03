@@ -1,13 +1,13 @@
-#Lingo Word Game
-###Project 01
-#####NOV 26, 2020
+ # Lingo Word Game
+ ## Project 01
+ ### NOV 26, 2020
 
 This is my first repository. I am totally new to this, so ignore most here unless you think I can learn from it.
 
 
 *(these notes are for me to use as reference of my learning and keep the code clean once something is fixed.*
 
-#####Week 1 Notes:
+### Week 1 Notes:
 
 	[] need to be able to restart game
 	[] game does not run after letter input, not crash, not end
