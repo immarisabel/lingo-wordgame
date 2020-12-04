@@ -1,36 +1,50 @@
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
+import com.sun.tools.sjavac.comp.dependencies.PublicApiCollector;
+
 public class LingoGame {
+	
+
 
 	public static void PrintResult(boolean result) {
 
 		System.out.println("Success? " + (result ? true : false));
 
-		System.out
-				.println("\n" + "Select again 1, 2 or 3 to play again!" + "\n");
-
+	
+		
 	}
 
 	public static void main(String[] args) {
-
+		
+		String answer
+		do { 
 		Scanner scan = new Scanner(System.in);
 		// get words
 		final String strWord = Initializer.InitializeFromArray();
 		String wordGuessed = "";
-		int Attempt = 0;
-		int level = 0;
-		int tries = 0;
+		
+
 		// GAME START!
 		System.out.println("New Game");
 		System.out.println("1. Easy" + "\n" + "2. Medium" + "\n" + "3. Hard"
-				+ "\n" + "Enter a mode:");
-		// SELECT LEVEL
-
-		while (level > 0 || level < 4 && scan.hasNextInt()) {
-
-			// set tries according to level
-			level = scan.nextInt();
+				+ "\n" + "Enter a number for mode:");
+		// SELECT LEVEL		
+		
+		int level = 0;
+		int tries = 0;
+		level = scan.nextInt();
+		
+// can't figure out how to stop the crashing if input is letters
+		
+		
+		while (level  ==  0 || level > 3) {
+			System.out.println("Invalid level entered, please number only:" + "\n"
+					+ "1. Easy" + "\n" + "2. Medium" + "\n" + "3. Hard"
+					+ "\n" + "Enter a mode:");
+			level = scan.nextInt(); }
 
 			if (level == 1) {
 				tries = 5;
@@ -38,15 +52,10 @@ public class LingoGame {
 				tries = 15;
 			} else if (level == 3) {
 				tries = 30;
-
-			} else {
-				System.out.println("Invalid level entered, please use:" + "\n"
-						+ "1. Easy" + "\n" + "2. Medium" + "\n" + "3. Hard"
-						+ "\n" + "Enter a mode:");
-
-			}
-
+			} 
+			
 			// START WORDS
+			int Attempt = 0;
 			int len = 5;
 			Validator eval = new Validator();
 			char[] cArray = new char[5];
@@ -88,7 +97,18 @@ public class LingoGame {
 						+ String.valueOf(cArray));
 			}
 			PrintResult(wordGuessed.equals(strWord));
+			
 
-		}
+			System.out.println("\n" + "Play again? yes /no" + "\n");
+			
+			Scanner answerinput = new Scanner(System.in);
+			String playAgain = answerinput.next();
+			
+		
+			answerinput.close();
+		
 	}
-}
+		while (answer.equals("yes")); {}
+	
+	}
+	}
