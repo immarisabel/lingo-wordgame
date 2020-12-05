@@ -3,7 +3,6 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
-import com.sun.tools.sjavac.comp.dependencies.PublicApiCollector;
 
 public class LingoGame {
 	
@@ -19,13 +18,22 @@ public class LingoGame {
 
 	public static void main(String[] args) {
 		
-		String answer
-		do { 
-		Scanner scan = new Scanner(System.in);
+		String playAgain = "yes";
+
+			
+		System.out.println("\n" + "Play again? yes /no" + "\n");
+		Scanner answer = new Scanner(System.in);
+
+		playAgain = answer.next();
+		answer.close();
+		while (playAgain.equals("yes")); {
+		
+ { 
 		// get words
 		final String strWord = Initializer.InitializeFromArray();
 		String wordGuessed = "";
-		
+		Scanner scan = new Scanner(System.in);
+
 
 		// GAME START!
 		System.out.println("New Game");
@@ -98,17 +106,5 @@ public class LingoGame {
 			}
 			PrintResult(wordGuessed.equals(strWord));
 			
-
-			System.out.println("\n" + "Play again? yes /no" + "\n");
-			
-			Scanner answerinput = new Scanner(System.in);
-			String playAgain = answerinput.next();
-			
 		
-			answerinput.close();
-		
-	}
-		while (answer.equals("yes")); {}
-	
-	}
-	}
+		{}}}}}
