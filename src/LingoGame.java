@@ -1,25 +1,25 @@
 import java.util.Scanner;
 
-public class LingoGame {
-
+public class LingoGame
+{
 
 	public static void main(String[] args)
 	{
-		Game.StartGame();
+		Scanner playAgain = new Scanner(System.in);
+		System.out.println("Wanna play? Yes or no?");
+		Boolean play = playAgain.nextBoolean();
 
-		String playAgain = "yes";
-		do
+		if (play == true)
 		{
-			Scanner play = new Scanner(
-					playAgain
-			);
-			System.out.println(
-					"Play again? Yes or no?"
-			);
-			play.nextLine();
-			play.close();
-		} while (false);
-	}
-	}
+			Game.StartGame();
 
+		}
 
+		else if (play == false)
+		{
+			System.out.println("Thank you for playing!");
+
+		}
+		playAgain.close();
+	}
+}

@@ -3,13 +3,9 @@ import java.util.Scanner;
 public class Game
 {
 
-	public static void PrintResult(
-			boolean result
-	)
+	public static void PrintResult(boolean result)
 	{
-		System.out.println(
-				"Success? " + (result ? true : false)
-		);
+		System.out.println("Success? " + (result ? true : false));
 	}
 
 	public static void StartGame()
@@ -21,31 +17,23 @@ public class Game
 		int tries = 0;
 		String play = "y";
 
-		Scanner scan = new Scanner(
-				System.in
-		);
+		Scanner scan = new Scanner(System.in);
 
 		// get words
 		final String strWord = Initializer.InitializeFromArray();
 		String wordGuessed = "";
 
 		// GAME START!
-		System.out.println(
-				"New Game"
-		);
-		System.out.println(
-				"1. Easy" + "\n" + "2. Medium" + "\n" + "3. Hard" + "\n" + "Enter a number for mode:"
-		);
+		System.out.println("New Game");
+		System.out.println("1. Easy" + "\n" + "2. Medium" + "\n" + "3. Hard" + "\n" + "Enter a number for mode:");
 
 		// SELECT LEVEL
 		level = scan.nextInt();
 
 		while (level == 0 || level > 3)
 		{
-			System.out.println(
-					"Invalid level entered, please number only:" + "\n" + "1. Easy" + "\n" + "2. Medium" + "\n"
-							+ "3. Hard" + "\n" + "Enter a mode:"
-			);
+			System.out.println("Invalid level entered, please number only:" + "\n" + "1. Easy" + "\n" + "2. Medium"
+					+ "\n" + "3. Hard" + "\n" + "Enter a mode:");
 			level = scan.nextInt();
 		}
 
@@ -66,44 +54,30 @@ public class Game
 		char[] cArray = new char[5];
 		for (Attempt = 1; Attempt <= tries; Attempt++)
 		{
-			Scanner guessing = new Scanner(
-					System.in
-			);
+			Scanner guessing = new Scanner(System.in);
 
-			System.out.println(
-					"Guess the word with 5 letters"
-			);
+			System.out.println("Guess the word with 5 letters");
 			wordGuessed = guessing.nextLine();
 
-			if (eval.CheckLength(
-					wordGuessed, len
-			))
+			if (eval.CheckLength(wordGuessed, len))
 			{
 
-				System.out.println(
-						"Did you guess it?"
-				);
+				System.out.println("Did you guess it?");
 			} else
 			{
 
-				System.out.println(
-						"Please only write a word with 5 letters."
-				);
+				System.out.println("Please only write a word with 5 letters.");
 				continue;
 			}
-			if (wordGuessed.equals(
-					strWord
-			))
+			if (wordGuessed.equals(strWord))
 			{
 
 				break;
 			} else
 			{
 
-				System.out.println(
-						"\n" + "Nice try for Attempt Number " + (Attempt) + " !" + "\n" + "Try again." + "\n"
-								+ "Attempts left: " + (tries - (Attempt)) + "\n"
-				);
+				System.out.println("\n" + "Nice try for Attempt Number " + (Attempt) + " !" + "\n" + "Try again." + "\n"
+						+ "Attempts left: " + (tries - (Attempt)) + "\n");
 			}
 			for (int i = 0; i < 5; i++)
 			{
@@ -116,17 +90,9 @@ public class Game
 					cArray[i] = '?';
 			}
 
-			System.out.println(
-					"Your attempt is now something like " + String.valueOf(
-							cArray
-					)
-			);
+			System.out.println("Your attempt is now something like " + String.valueOf(cArray));
 		}
-		PrintResult(
-				wordGuessed.equals(
-						strWord
-				)
-		);
+		PrintResult(wordGuessed.equals(strWord));
 
 	}
 }
