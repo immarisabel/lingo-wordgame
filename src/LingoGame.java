@@ -1,52 +1,44 @@
-
-import java.util.InputMismatchException;
 import java.util.Scanner;
-
-
 
 public class LingoGame {
 	
 
 
-	public static void PrintResult(boolean result) {
 
-		System.out.println("Success? " + (result ? true : false));
-
-	
-		
+	public static void PrintResult(
+			boolean result
+	)
+	{
+		System.out.println(
+				"Success? " + (result ? true : false)
+		);
 	}
 
+
 	public static void main(String[] args) {
-		
-		String playAgain = "yes";
-
-			
-		System.out.println("\n" + "Play again? yes /no" + "\n");
-		Scanner answer = new Scanner(System.in);
-
-		playAgain = answer.next();
-		answer.close();
-		while (playAgain.equals("yes")); {
-		
- { 
+		// VARIABLES
+		int Attempt = 0;
+		int len = 5;
+		int level = 0;
+		int tries = 0;
+		boolean playAgain;
+		Scanner scan  = new Scanner(
+				System.in
+		);
+		Object play;
+do {
 		// get words
 		final String strWord = Initializer.InitializeFromArray();
 		String wordGuessed = "";
-		Scanner scan = new Scanner(System.in);
-
 
 		// GAME START!
 		System.out.println("New Game");
 		System.out.println("1. Easy" + "\n" + "2. Medium" + "\n" + "3. Hard"
 				+ "\n" + "Enter a number for mode:");
+
 		// SELECT LEVEL		
-		
-		int level = 0;
-		int tries = 0;
 		level = scan.nextInt();
-		
-// can't figure out how to stop the crashing if input is letters
-		
+
 		
 		while (level  ==  0 || level > 3) {
 			System.out.println("Invalid level entered, please number only:" + "\n"
@@ -63,8 +55,7 @@ public class LingoGame {
 			} 
 			
 			// START WORDS
-			int Attempt = 0;
-			int len = 5;
+
 			Validator eval = new Validator();
 			char[] cArray = new char[5];
 			for (Attempt = 1; Attempt <= tries; Attempt++) {
@@ -104,7 +95,34 @@ public class LingoGame {
 				System.out.println("Your attempt is now something like "
 						+ String.valueOf(cArray));
 			}
-			PrintResult(wordGuessed.equals(strWord));
-			
+			PrintResult(
+					wordGuessed.equals(
+							strWord
+					)
+			);
+
+			System.out.println(
+					"\nPlay again? y / n"
+
+			);
+			play = scan.next();
+
+		}
+
+
+
+		while (play.equals(
+				'n'
+		));
+		{
+
+			System.out.println(
+					"\nThanks for playing !"
+			);
+
+
+			scan.close();
+
+		}
 		
-		{}}}}}
+		{}}}
