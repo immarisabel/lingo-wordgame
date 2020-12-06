@@ -6,7 +6,7 @@ public class Initializer {
 
 	public static String InitializeFromArray() {
 		rgWords = new String[]
-		{ "lungo", "lingo" };
+		{ "lingo" };
 		int random = new Random().nextInt(rgWords.length);
 		return rgWords[random];
 	}
