@@ -7,19 +7,17 @@ public class LingoGame
 	{
 		Scanner playAgain = new Scanner(System.in);
 		System.out.println("Wanna play? Yes or no?");
-		Boolean play = playAgain.nextBoolean();
+		String play = playAgain.next();
 
-		if (play == true)
+		while (play == "yes")
+			;
 		{
 			Game.StartGame();
 
 		}
 
-		else if (play == false)
-		{
-			System.out.println("Thank you for playing!");
+		// if (play == "no"){ System.out.println("Thank you for playing!"); }
 
-		}
 		playAgain.close();
 	}
 }
