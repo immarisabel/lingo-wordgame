@@ -6,18 +6,28 @@ public class LingoGame
 	public static void main(String[] args)
 	{
 		Scanner playAgain = new Scanner(System.in);
-		System.out.println("Wanna play? Yes or no?");
-		String play = playAgain.next();
 
-		while (play == "yes")
+		// START WORK AREA
+		System.out.println("\nWanna play ? type 'true' or 'false'\n");
+
+		playAgain.nextBoolean();
+
+		while (playAgain(true))
 			;
 		{
+
 			Game.StartGame();
+			System.out.println("\nWanna play again? Yes or no?\n");
+			playAgain.nextBoolean();
 
 		}
 
-		// if (play == "no"){ System.out.println("Thank you for playing!"); }
+	}
 
-		playAgain.close();
+	// END WORK AREA
+
+	private static boolean playAgain(boolean b)
+	{
+		return false;
 	}
 }
