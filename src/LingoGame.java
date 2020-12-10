@@ -5,29 +5,25 @@ public class LingoGame
 
 	public static void main(String[] args)
 	{
-		Scanner playAgain = new Scanner(System.in);
-
-		// START WORK AREA
+		@SuppressWarnings("resource")
+		Scanner play = new Scanner(System.in);
 		System.out.println("\nWanna play ? type 'true' or 'false'\n");
+		Boolean wannaPlay = play.nextBoolean();
 
-		playAgain.nextBoolean();
-
-		while (playAgain(true))
-			;
+		while (wannaPlay == true)
 		{
 
 			Game.StartGame();
-			System.out.println("\nWanna play again? Yes or no?\n");
-			playAgain.nextBoolean();
+			System.out.println("\n");
+			System.out.println("\nWanna play ? type 'true' or 'false'\n");
+			wannaPlay = play.nextBoolean();
+		}
 
+		{
+
+			System.out.println("\nBye!\n");
 		}
 
 	}
 
-	// END WORK AREA
-
-	private static boolean playAgain(boolean b)
-	{
-		return false;
-	}
 }

@@ -29,13 +29,16 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - [ ] when repeating the game, the same word is always chosen.
 
 ### DEC 4, 2020
-- [ ] won't repeat game after it ends, again.
+- [x] won't repeat game after it ends, again. [10 DEC]
 
 ### DEC 5, 2020
 - *spent most day trying to fix the restart loop without success...*
 
 - [x] levels were backwards :sweat_smile: [DEC 5]
 - [ ] replace end booleans with actual strings
+
+### DEC 10, 2020
+- :pencil2: *I managed to run the restart game loop! It was simple... I was just ignoring converting the answer into Boolean! Now I still need to fix the random word to actually reset.*
 
 # planned implementation
 - [ ] be able to play as many times as you wish
