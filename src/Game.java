@@ -20,7 +20,7 @@ public class Game
 		Scanner scan = new Scanner(System.in);
 
 		// get words
-		final String strWord = Initializer.InitializeFromArray();
+		final String strWord = InitializerTwo.InitializeFromArray();
 		String wordGuessed = "";
 
 		// GAME START!

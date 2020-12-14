@@ -1,21 +1,32 @@
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Random;
+import java.util.Scanner;
 
 public class InitializerTwo
 {
 
-	static String[] rgWords = null;
+	static String[] randomWords = null;
 
 	public static String InitializeFromArray()
 	{
-		ArrayList<String> lines = new ArrayList<>(Files.readAllLines(Paths.get(/P001/src/lingowords.txt)));
-		List<String> result = Files.readAllLines(Paths.get(lingowords.txt));
 
-		int random = new Random().nextInt(rgWords.length);
-		return rgWords[random];
+		File file = new File(
+				"C:\\Users\\Administrator\\Desktop\\PROJECTS OFFICIAL\\2020\\wordgame\\src\\lingowords.txt");
+		Scanner scan = null;
+		try
+		{
+			scan = new Scanner(file);
+		} catch (FileNotFoundException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		randomWords = new String[]
+		{ scan.nextLine() };
+		int random = new Random().nextInt();
+		return randomWords[random];
+
 	}
-
 }
