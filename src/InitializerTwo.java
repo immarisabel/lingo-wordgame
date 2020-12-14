@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class InitializerTwo
 {
 
-	static String[] randomWords = null;
+	static String[] randomWord = null;
 
 	public static String InitializeFromArray()
 	{
@@ -23,10 +23,11 @@ public class InitializerTwo
 			e.printStackTrace();
 		}
 
-		randomWords = new String[]
+		randomWord = new String[]
 		{ scan.nextLine() };
+
 		int random = new Random().nextInt();
-		return randomWords[random];
+		return randomWord[random];
 
 	}
 }

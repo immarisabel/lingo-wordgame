@@ -1,5 +1,7 @@
 import java.util.Random;
 
+import wordgame.wordlist;
+
 public class Initializer
 {
 
@@ -8,7 +10,7 @@ public class Initializer
 	public static String InitializeFromArray()
 	{
 		rgWords = new String[]
-		{ "lingo", "lungo" };
+		{ wordlist.loadFile() };
 		int random = new Random().nextInt(rgWords.length);
 		return rgWords[random];
 	}
