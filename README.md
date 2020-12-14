@@ -26,7 +26,7 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - [ ] game does not run after letter input, not crash, not end, just shows blank and game stops
 - *will postpone fixing this until the end as using GUI might fix this by limiting selection of options*
 
-- [ ] when repeating the game, the same word is always chosen.
+- [x] when repeating the game, the same word is always chosen. [10 DEC]
 
 ### DEC 4, 2020
 - [x] won't repeat game after it ends, again. [10 DEC]
@@ -41,9 +41,10 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - :pencil2: *I managed to run the restart game loop! It was simple... I was just ignoring converting the answer into Boolean! Now I still need to fix the random word to actually reset.*
 
 # planned implementation
-- [ ] be able to play as many times as you wish
+- [x] be able to play as many times as you wish
 - [ ] have a big word list to choose from
-		- *word list in files, but will replace it at the end, else it is annoying to test with so many words*
+- *word list in files, but will replace it at the end, else it is annoying to test with so many words*
+- *14/12 in progress*
 - [ ] hints
 - [ ] create categories of words
 - [ ] multiplayer function
