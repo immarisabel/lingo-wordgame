@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class LingoGame
 {
 
+	public static String[] guesses = new String[6];
+	public static String wrongGuess;
+
 	public static void main(String[] args)
 	{
 		@SuppressWarnings("resource")

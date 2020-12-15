@@ -21,7 +21,9 @@ public class Game
 
 		// get words
 		final String strWord = Initializer.InitializeFromArray();
-		System.out.println(strWord);
+
+		System.out.println("***DEBUG chosen word is: \n    >>> " + strWord + " <<<\n"); // DEBUG check word used
+
 		String wordGuessed = "";
 
 		// GAME START!
