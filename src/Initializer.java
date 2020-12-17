@@ -1,8 +1,8 @@
-import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Initializer
 {
@@ -11,43 +11,29 @@ public class Initializer
 
 	public static String InitializeFromArray()
 	{
-		String line = null;
-		String fileName = null;
+		Random rand = new Random();
+		Scanner scan = new Scanner(System.in);
+		File file = new File(
+				"C:\\Users\\Administrator\\Desktop\\PROJECTS OFFICIAL\\2020\\wordgame\\src\\lingowords.txt");
+		Scanner s = null;
 		try
 		{
-			// file to open.
-			fileName = "C:\\Users\\Administrator\\Desktop\\PROJECTS OFFICIAL\\2020\\wordgame\\src\\lingowords.txt"; // words
-			FileReader fileReader = new FileReader(fileName);
-			BufferedReader bufferedReader = new BufferedReader(fileReader);
-
-			while ((line = bufferedReader.readLine()) != null)
-			{
-				// results.add(line);
-
-				// TODO Return a random word from file
-
-				Random random = new Random(rgWords.length);
-
-				int word = get(random.nextInt()); // picks random word from list
-
-			}
-
-			bufferedReader.close();
-		} catch (FileNotFoundException ex)
+			s = new Scanner(file);
+		} catch (FileNotFoundException e)
 		{
-			System.out.println("Unable to open file '" + fileName + "'");
-		} catch (IOException ex)
-		{
-			System.out.println("Error reading file '" + fileName + "'");
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		return line;
+		ArrayList<String> words = new ArrayList<>();
+		while (s.hasNextLine())
+		{
+			words.add(s.nextLine());
+		}
+		String chosenWord = null;
 
-	}
+		chosenWord = words.get(rand.nextInt(14) + 1);
+		return chosenWord;
 
-	private static int get(int nextInt)
-	{
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 }
