@@ -42,9 +42,10 @@ This is my first repository. I am totally new to this, so ignore most here unles
 
 # planned implementation
 - [x] be able to play as many times as you wish
-- [ ] have a big word list to choose from
+- [x] have a big word list to choose from
 - *word list in files, but will replace it at the end, else it is annoying to test with so many words*
 - *14/12 in progress*
+- *17/12 finally got the word to randomize from file!*
 - [ ] hints
 - [ ] create categories of words
 - [ ] multiplayer function
