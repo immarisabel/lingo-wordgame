@@ -32,7 +32,7 @@ public class Initializer
 		}
 		String chosenWord = null;
 
-		chosenWord = words.get(rand.nextInt(14000) + 1);
+		chosenWord = words.get(rand.nextInt(100) + 1);
 		return chosenWord;
 	}
 	
