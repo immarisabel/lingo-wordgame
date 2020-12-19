@@ -15,7 +15,7 @@ public class Initializer
 		Random rand = new Random();
 		Scanner scan = new Scanner(System.in);
 		File file = new File(
-				"C:\\Users\\Administrator\\Desktop\\PROJECTS OFFICIAL\\2020\\wordgame\\src\\lingowords.txt");
+				"C:\\Users\\Administrator\\Desktop\\PROJECTS OFFICIAL\\2020\\wordgame\\src\\words.dic");
 		Scanner s = null;
 		try
 		{
@@ -32,7 +32,7 @@ public class Initializer
 		}
 		String chosenWord = null;
 
-		chosenWord = words.get(rand.nextInt(14) + 1);
+		chosenWord = words.get(rand.nextInt(14000) + 1);
 		return chosenWord;
 	}
 	

@@ -10,23 +10,26 @@ public class LingoGame
 	{
 		@SuppressWarnings("resource")
 		Scanner play = new Scanner(System.in);
-		System.out.println("\nWanna play ? type 'true' or 'false'\n");
-		Boolean wannaPlay = play.nextBoolean();
-
-		while (wannaPlay == true)
+		System.out.println("\nWanna play ? \n >>> #1 YES\n >>> #2 NO\n type 1 or 2");
+		int wannaPlay = play.nextInt();
+		while (wannaPlay > 2)
+		{
+			System.out.println("\ntype 1 or 2");
+			wannaPlay = play.nextInt();
+		}
+		while (wannaPlay == 1)
 		{
 
 			Game.StartGame();
 			System.out.println("\n");
-			System.out.println("\nWanna play ? type 'true' or 'false'\n");
-			wannaPlay = play.nextBoolean();
+			System.out.println("\nWanna play ? \n >>> #1 YES\n >>> #2 NO\n type 1 or 2");
+			wannaPlay = play.nextInt();
 		}
 
 		{
-
-			System.out.println("\nBye!\n");
+			if (wannaPlay == 2)
+				System.out.println("\nOkThanksBye!\n");
 		}
 
 	}
-
 }
