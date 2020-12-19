@@ -12,7 +12,7 @@ This is my first repository. I am totally new to this, so ignore most here unles
 
 # Currently Working on:
 ### DEC 19 - JAN 30, 2020
-##Database and Score implentation
+## Database and Score implentation
 - I will be working now on the scores. But I figured I might need to start with user storing. This will be a good practice on how to implement database, storing data, accessing the data and updating it. I got a new job finally so I will be realistic about my timeline. Hence a bit over a month should be ok to learn how databases work with Java.
 
 **TO DO:**
