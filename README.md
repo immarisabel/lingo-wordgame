@@ -10,6 +10,22 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - [x] :heavy_check_mark: these are fixed [and date]
 - :pencil2: * notes and thoughts*
 
+# Currently Working on:
+### DEC 19 - JAN 30, 2020
+##Database and Score implentation
+- I will be working now on the scores. But I figured I might need to start with user storing. This will be a good practice on how to implement database, storing data, accessing the data and updating it. I got a new job finally so I will be realistic about my timeline. Hence a bit over a month should be ok to learn how databases work with Java.
+
+**TO DO:**
+- [ ] Integrate a database 
+- [ ] Register User name in database 
+- [ ] Score per guess 10 
+- [ ] Score per hint -5
+- [ ] 5 word streak = +50 bonus
+- [ ] 10 word streak = +100 bonus
+- [ ] Words score after the 10th streak is 20 points instead of 10
+- [ ] If streak finishes, then score per word is again 10
+- [ ] End game? Then display total and store in user name
+
 # challenges to fix
 ### Week 1 Notes:
 
@@ -35,20 +51,22 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - *spent most day trying to fix the restart loop without success...*
 
 - [x] levels were backwards :sweat_smile: [DEC 5]
-- [ ] replace end booleans with actual strings
+- [x] replace end booleans with actual ints
 
 ### DEC 10, 2020
 - :pencil2: *I managed to run the restart game loop! It was simple... I was just ignoring converting the answer into Boolean! Now I still need to fix the random word to actually reset.*
 
-# planned implementation
+
+
+# planned implementations
 - [x] be able to play as many times as you wish
 - [x] have a big word list to choose from
 - *word list in files, but will replace it at the end, else it is annoying to test with so many words*
 - *14/12 in progress*
 - *17/12 finally got the word to randomize from file!*
 - [ ] hints
-- [ ] create categories of words
 - [ ] multiplayer function
-- [ ] scoring system
+- [ ] scoring system 
+- *19/12 working on this now*
 - [ ] store the player's progress and scores
 - [ ] GUI

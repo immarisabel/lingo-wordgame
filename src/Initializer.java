@@ -30,7 +30,7 @@ public class Initializer
 		}
 		String chosenWord = null;
 
-		chosenWord = words.get(rand.nextInt(14) + 1);
+		chosenWord = words.get(rand.nextInt(99) + 1);
 		return chosenWord;
 
 	}

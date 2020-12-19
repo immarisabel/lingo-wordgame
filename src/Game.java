@@ -45,10 +45,10 @@ public class Game
 			tries = 5;
 		} else if (level == 2)
 		{
-			tries = 15;
+			tries = 10;
 		} else if (level == 1)
 		{
-			tries = 30;
+			tries = 20;
 		}
 
 		// START WORDS
