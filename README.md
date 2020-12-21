@@ -61,14 +61,22 @@ This is my first repository. I am totally new to this, so ignore most here unles
 
 # planned implementations
 - [x] be able to play as many times as you wish
+
 - [x] have a big word list to choose from
 - *word list in files, but will replace it at the end, else it is annoying to test with so many words*
 - *14/12 in progress*
 - *17/12 finally got the word to randomize from file!*
+
 - [ ] hints
+- *21/12 began also working on this. Need to get first the chosen word to display if it is wrong before being able to implement a hint. It is still random again instead of the same.* 
+
 - [ ] multiplayer function
+
 - [ ] scoring system 
 - *19/12 working on this now*
-- *21/12 began building the class for this but need to research a bit more on how to use it. ALso began working on the GUI and learning a lot form it, the GUI seems actually like the easy part!*
+- *21/12 began building the class for this but need to research a bit more on how to use it. *
+
 - [ ] store the player's progress and scores
+
 - [ ] GUI
+- *21/12 Also began working on the GUI and learning a lot form it, the GUI seems actually like the easy part!*
