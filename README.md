@@ -74,7 +74,7 @@ This is my first repository. I am totally new to this, so ignore most here unles
 
 - [ ] scoring system 
 - *19/12 working on this now*
-- *21/12 began building the class for this but need to research a bit more on how to use it. *
+- *21/12 began building the class for this but need to research a bit more on how to use it.*
 
 - [ ] store the player's progress and scores
 
