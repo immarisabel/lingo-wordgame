@@ -3,9 +3,10 @@ import java.util.Scanner;
 public class Game
 {
 
-	public static void PrintResult(boolean result)
+	public static String Word()
 	{
-		System.out.println("Success? " + (result ? true : false));
+		final String word = Initializer.InitializeFromArray();
+		return word;
 	}
 
 	public static void StartGame()
@@ -20,9 +21,11 @@ public class Game
 		Scanner scan = new Scanner(System.in);
 
 		// get words
-		final String strWord = Initializer.InitializeFromArray();
+		String strWord = Game.Word();
 
-		System.out.println("***DEBUG chosen word is: \n    >>> " + strWord + " <<<\n"); // DEBUG check word used
+// TODO delete when finished
+		System.out.println("***DEBUG chosen word is: \n    >>> " + strWord + " <<<\n");
+/////////////// /////////////// /////////////// /////////////// /////////////// 
 
 		String wordGuessed = "";
 
@@ -65,7 +68,6 @@ public class Game
 			if (eval.CheckLength(wordGuessed, len))
 			{
 
-				System.out.println("Did you guess it?");
 			} else
 			{
 
@@ -79,7 +81,7 @@ public class Game
 			} else
 			{
 
-				System.out.println("\n" + "Nice try for Attempt Number " + (Attempt) + " !" + "\n" + "Try again." + "\n"
+				System.out.println("\nNice try for Attempt Number " + (Attempt) + " !" + "\nTry again.\n"
 						+ "Attempts left: " + (tries - (Attempt)) + "\n");
 			}
 			for (int i = 0; i < 5; i++)
@@ -96,6 +98,13 @@ public class Game
 			System.out.println("Your attempt is now something like " + String.valueOf(cArray));
 		}
 		PrintResult(wordGuessed.equals(strWord));
+
+	}
+
+	public static void PrintResult(boolean result)
+	{
+		System.out.println(">>> Did you guess it?"
+				+ (result ? "\nYES! Good job!" : "\nNop. Sorry! The word was " + Game.StartGame(strWord) + ".");
 
 	}
 }

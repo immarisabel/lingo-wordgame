@@ -16,6 +16,7 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - I will be working now on the scores. But I figured I might need to start with user storing. This will be a good practice on how to implement database, storing data, accessing the data and updating it. I got a new job finally so I will be realistic about my timeline. Hence a bit over a month should be ok to learn how databases work with Java.
 
 **TO DO:**
+- [ ] fix the loop to not ask again the difficulty nor try again but continue until player presses end game on GIU
 - [ ] Integrate a database 
 - [ ] Register User name in database 
 - [ ] Score per guess 10 
@@ -68,5 +69,6 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - [ ] multiplayer function
 - [ ] scoring system 
 - *19/12 working on this now*
+- *21/12 began building the class for this but need to research a bit more on how to use it. ALso began working on the GUI and learning a lot form it, the GUI seems actually like the easy part!*
 - [ ] store the player's progress and scores
 - [ ] GUI
