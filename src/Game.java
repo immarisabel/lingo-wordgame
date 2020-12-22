@@ -13,12 +13,12 @@ public class Game
 		Scanner scan = new Scanner(System.in);
 
 		// SELECT LEVEL
-
+		int level = scan.nextInt();
 		System.out.println("1. Easy" + "\n" + "2. Medium" + "\n" + "3. Hard" + "\n" + "Enter a number for mode:");
 
 		if (level == 0 || level > 3)
 		{
-			int level = scan.nextInt();
+
 
 			// System.out.println("Invalid level entered, please 1, 2 or 3 only.");
 		} else
@@ -49,7 +49,6 @@ public class Game
 	{
 		// VARIABLES
 
-		String play = "y";
 
 		Scanner scan = new Scanner(System.in);
 		while (Game.life >= 1)
