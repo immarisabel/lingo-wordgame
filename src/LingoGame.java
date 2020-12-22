@@ -24,8 +24,7 @@ public class LingoGame
 
 			Game.StartGame();
 			System.out.println("\n");
-			System.out.println("\nWanna play ? \n >>> #1 YES\n >>> #2 NO\n type 1 or 2");
-			wannaPlay = play.nextInt();
+
 		}
 
 		{
