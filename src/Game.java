@@ -7,20 +7,22 @@ public class Game
 	static int level = 0;
 	static int tries = 0;
 	static int life = 3;
+	static String wordGuessed = "";
+
 
 	public static int Mode(int tries)
 	{
-		Scanner scan = new Scanner(System.in);
 
 		// SELECT LEVEL
-		int level = scan.nextInt();
-		System.out.println("1. Easy" + "\n" + "2. Medium" + "\n" + "3. Hard" + "\n" + "Enter a number for mode:");
+
+		Scanner scan = new Scanner(System.in);
+		level = scan.nextInt();
 
 		if (level == 0 || level > 3)
 		{
 
 
-			// System.out.println("Invalid level entered, please 1, 2 or 3 only.");
+			System.out.println("Invalid level entered, please 1, 2 or 3 only.");
 		} else
 		{
 
@@ -47,27 +49,24 @@ public class Game
 
 	public static void StartGame()
 	{
-		// VARIABLES
-
+		 String strWord = Game.Word(null);
 
 		Scanner scan = new Scanner(System.in);
-		while (Game.life >= 1)
+		System.out.println("""
+					1. Easy\s
+					2. Medium\s
+					3. Hard\s
+					Enter a number for mode:\s
+					""");
+// WHILE LOOP STARTS
+		while (Game.life >= 1 )
 		{
-			// get words
-			String strWord = Game.Word(null);
+
 
 // TODO delete when finished
 			System.out.println("***DEBUG chosen word is: \n    >>> " + strWord + " <<<\n");
-/////////////// /////////////// /////////////// /////////////// /////////////// 
-
-			String wordGuessed = "";
-
-			// GAME START!
-			System.out.println("New Game");
 
 			// START WORDS
-			if (wordGuessed.equals(strWord))
-				;
 			{
 				Validator eval = new Validator();
 				char[] cArray = new char[5];
@@ -89,14 +88,16 @@ public class Game
 					}
 					if (wordGuessed.equals(strWord))
 					{
-
 						break;
+
 					} else
 					{
 
 						System.out.println("\nNice try for Attempt Number " + (Attempt) + " !" + "\nTry again.\n"
 								+ "Attempts left: " + (Mode(tries) - (Attempt)) + "\n");
 					}
+
+// HINT
 					for (int i = 0; i < 5; i++)
 					{
 
@@ -110,33 +111,26 @@ public class Game
 
 					System.out.println("Your attempt is now something like " + String.valueOf(cArray));
 				}
-
+/// RESULT
 				String result = (wordGuessed.equals(strWord)) ? "\nYES! Good job!"
 						: "\nNop. Sorry! The word was " + strWord + ".";
 				System.out.println(result);
 
-				/// CREDIT COUNT
+/// CREDIT COUNT
 
-				if (wordGuessed.equals(strWord))
-
-				{
-
-					System.out.println("Credits : " + life);
-				} else
-				{
+				if (!wordGuessed.equals(strWord)) {
 					life--;
-					System.out.println("Credits : " + life);
-
 				}
+				System.out.println("Credits : " + life);
+
 			}
-			System.out.println("GAME OVER");
-
 		}
-	}
-}
+	}//	System.out.println("GAME OVER 1");
+}			//System.out.println("GAME OVER 2");
 
-//TO DO make a return value for score 0 + 1++
+
+//TODO make a return value for score 0 + 1++
 // for life is >=3 repeat and if 0, = game over, but only -1 when it is
 // !=strWord
 // for each =strWord 10+
-//When life reach 0 go to GAME OVER
+// When life reach 0 go to GAME OVER
