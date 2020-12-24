@@ -7,7 +7,7 @@ public class Game
 	static int level = 0;
 	static int tries = 0;
 	static int life = 3;
-	static String wordGuessed = "";
+
 
 
 	public static int Mode(int tries)
@@ -65,8 +65,11 @@ public class Game
 
 // TODO delete when finished
 			System.out.println("***DEBUG chosen word is: \n    >>> " + strWord + " <<<\n");
+			String wordGuessed = "";
 
 			// START WORDS
+			if (wordGuessed.equals(strWord))
+				;
 			{
 				Validator eval = new Validator();
 				char[] cArray = new char[5];
