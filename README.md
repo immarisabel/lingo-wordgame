@@ -16,7 +16,8 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - I will be working now on the scores. But I figured I might need to start with user storing. This will be a good practice on how to implement database, storing data, accessing the data and updating it. I got a new job finally so I will be realistic about my timeline. Hence a bit over a month should be ok to learn how databases work with Java.
 
 **TO DO:**
-- [ ] fix the loop to not ask again the difficulty nor try again but continue until player presses end game on GIU
+:heavy_check_mark: fix the loop to not ask again the difficulty nor try again but continue until player presses end game on GIU (25/12)
+- *25/12 : I cleaned it up after 3 days of work! It runs! not smoothly yet. But it runs!*
 - [ ] do a give up option everytime you fail 
 - [ ] Integrate a database 
 - [ ] Register User name in database 

@@ -37,11 +37,6 @@ System.out.println("tries set " + tries);
 
 	}
 
-	public static String Word(String word)
-	{
-		word = Initializer.InitializeFromArray();
-		return word;
-	}
 
 	public static void StartGame()
 	{
@@ -54,11 +49,10 @@ System.out.println("tries set " + tries);
 				Enter a number for mode:\s""");
 
 
-		Scanner scan = new Scanner(System.in);
 		do
 		{
 			// get words
-			String strWord = Game.Word(null);
+			String strWord = Initializer.InitializeFromArray();
 
 // TODO delete when finished
 			System.out.println("***DEBUG chosen word is: \n    >>> " + strWord + " <<<\n");
@@ -99,8 +93,8 @@ System.out.println("DEBUG word guessed correct");
 System.out.println("DEBUG word guessed wrong");
 						System.out.println(Attempt);
 						System.out.println(tries);
-					//	System.out.println("\nNice try for Attempt Number " + (Attempt) + " !" + "\nTry again.\n"
-					//			+ "Attempts left: " + (Mode(tries) - (Attempt)) + "\n");
+						System.out.println("\nNice try for Attempt Number " + (Attempt) + " !" + "\nTry again.\n"
+							+ "Attempts left: " + (Mode(tries) - (Attempt)) + "\n");
 					}
 					for (int i = 0; i < 5; i++)
 					{

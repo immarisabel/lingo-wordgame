@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LingoGame
+public class Home
 {
 
 	public static String[] guesses = new String[6];
@@ -8,7 +8,7 @@ public class LingoGame
 
 	public static void main(String[] args)
 	{
-		new LingoGame();
+		new Home();
 
 		@SuppressWarnings("resource")
 		Scanner play = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class LingoGame
 		while (wannaPlay == 1)
 		{
 
-			Game.StartGame();
+			GameBody.StartGame();
 			System.out.println("\n");
 
 		}
