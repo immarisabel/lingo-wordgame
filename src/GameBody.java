@@ -32,7 +32,7 @@ public class GameBody {
         {
             GameBody.tries = +20;}
 
-System.out.println("DEBUG : tries set " + GameBody.tries);
+
 
          return GameBody.tries;
 
@@ -56,7 +56,7 @@ System.out.println("DEBUG : tries set " + GameBody.tries);
 // random word selected
             String strWord = Initializer.InitializeFromArray();
 
-            System.out.println("DEBUG: tries " + tries);
+
 // TODO delete when finished
             System.out.println("***DEBUG chosen word is: \n    >>> " + strWord + " <<<\n");
 /////////////// /////////////// /////////////// /////////////// ///////////////
@@ -76,7 +76,7 @@ System.out.println("DEBUG : tries set " + GameBody.tries);
 // CHECK LENGTH
                 if (eval.CheckLength(wordGuessed, len))
                 {
-                    System.out.println("\u2713" + " DEBUG word length check OK");
+
                 } else
                 {
 
@@ -86,14 +86,11 @@ System.out.println("DEBUG : tries set " + GameBody.tries);
 
                 if (wordGuessed.equals(strWord))
                 {
-                    System.out.println("\u2713" +" DEBUG word guessed correct");
                     break;
 
                 } else
                 {
-                    System.out.println("DEBUG word guessed wrong");
-                    System.out.println("DEBUG attempt " + Attempt);
-                    System.out.println("DEBUG tries " + tries);
+
                     System.out.println("\nNice try for Attempt Number " + (Attempt) + " !" + "\nTry again.\n"
                             + "Attempts left: " + (tries - Attempt) + "\n");
                 }
@@ -130,6 +127,7 @@ System.out.println("DEBUG : tries set " + GameBody.tries);
             }
         }
         System.out.println("Game Over!");
+        life = 3;
 
         }
 }

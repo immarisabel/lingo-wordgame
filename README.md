@@ -30,6 +30,11 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - [ ] End game? Then display total and store in user name
 
 # challenges to fix
+- [ ] fixed the flow but now it counts the invalid input in the attempts. That will be the last thing I need to fix before building the scoring system.
+
+
+
+
 ### Week 1 Notes:
 
 :heavy_check_mark: need to be able to restart game
