@@ -58,7 +58,7 @@ public class GameBody {
 
 
 // TODO delete when finished
-            System.out.println("***DEBUG chosen word is: \n    >>> " + strWord + " <<<\n");
+        //    System.out.println("***DEBUG chosen word is: \n    >>> " + strWord + " <<<\n");
 /////////////// /////////////// /////////////// /////////////// ///////////////
 
             System.out.println("Word " + gameNumber++);

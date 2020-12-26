@@ -6,9 +6,13 @@ public class Home
 	public static String[] guesses = new String[6];
 	public static String wrongGuess;
 
-	public static void main(String[] args)
+	public static void mainOne(String[] args)
 	{
 		new Home();
+
+		//Scores.Timestamp(dtf.format(now));
+
+
 
 		@SuppressWarnings("resource")
 		Scanner play = new Scanner(System.in);
