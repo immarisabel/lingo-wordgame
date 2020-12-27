@@ -1,3 +1,7 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class GameBody {
@@ -8,6 +12,11 @@ public class GameBody {
     static int tries = 5;
     static int life = 3;
     static int gameNumber = 1;
+    static int scoreMultiplier = 10;
+    static int scoreMultiplierTwo = 30;
+    static int score = 0;
+    static int finalScore = 0;
+    static String finalScoreDate = null;
 
     public static int Mode(int tries)
     {
@@ -38,9 +47,18 @@ public class GameBody {
 
     }
 
+    public static String setDate( ) {
+        String pattern = "dd-MM-yyyy";
+        SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+        finalScoreDate = sdf.format(new Date());
+        return finalScoreDate;
+    }
+
     public static void StartGame()
     {
-        System.out.println("Welcome! Let's set up!\s");
+
+        System.out.println("Welcome! \nLet's set up!\s");
+        System.out.println("Current Score : " + (Scores.getHighScore()) + " on " +(Scores.getHighScoreDate())  + "\n");
 
         System.out.println("""
 				1. Easy\s
@@ -58,7 +76,7 @@ public class GameBody {
 
 
 // TODO delete when finished
-        //    System.out.println("***DEBUG chosen word is: \n    >>> " + strWord + " <<<\n");
+     System.out.println("***DEBUG chosen word is: \n    >>> " + strWord + " <<<\n");
 /////////////// /////////////// /////////////// /////////////// ///////////////
 
             System.out.println("Word " + gameNumber++);
@@ -117,20 +135,45 @@ public class GameBody {
             if (wordGuessed.equals(strWord))
 
             {
+                if(gameNumber < 10){
+                score = score+scoreMultiplier;}
+                else
+                {score = score+scoreMultiplierTwo;}
 
-                System.out.println("Credits : " + life);
+                System.out.println("Your current score is : " + (score));
+                System.out.println("Credits : " + life + "\n");
             } else
             {
                 life--;
-                System.out.println("Credits : " + life);
+                System.out.println("Credits : " + life + "\n");
 
             }
         }
-        System.out.println("Game Over!");
+        System.out.println("Game Over!" + "\n");
+        finalScore = score;
+        finalScoreDate = setDate();
+        if (finalScore > Scores.getHighScore()){
+        setHighScore();}
         life = 3;
 
         }
-}
+
+        // TODO do not write if score is less than highschore!
+
+    public static void setHighScore() {
+        try {
+            String filePath ="scores.txt";
+            FileWriter myWriter = new FileWriter(filePath);
+            myWriter.write(finalScoreDate + "\n");
+            myWriter.write(Integer.toString(finalScore));
+            myWriter.close();
+            System.out.println("Successfully wrote to the file.");
+
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+}}
 
 
 

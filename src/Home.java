@@ -6,7 +6,7 @@ public class Home
 	public static String[] guesses = new String[6];
 	public static String wrongGuess;
 
-	public static void mainOne(String[] args)
+	public static void main(String[] args)
 	{
 		new Home();
 

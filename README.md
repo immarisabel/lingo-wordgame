@@ -19,8 +19,7 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - :heavy_check_mark: fix the loop to not ask again the difficulty nor try again but continue until player presses end game on GIU (25/12)
 - *25/12 : I cleaned it up after 3 days of work! It runs! not smoothly yet. But it runs!*
 - [ ] do a give up option everytime you fail 
-- [ ] Integrate a database 
-- [ ] Register User name in database 
+- [ ] Integrate a file 
 - [ ] Score per guess 10 
 - [ ] Score per hint -5
 - [ ] 5 word streak = +50 bonus
@@ -84,7 +83,7 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - :pencil2: *19/12 working on this now*
 - :pencil2: *21/12 began building the class for this but need to research a bit more on how to use it.*
 
-- [ ] store the player's progress and scores
+- :pencil2: store the player's progress and scores
 
 - [ ] GUI
 - :pencil2: *21/12 Also began working on the GUI and learning a lot form it, the GUI seems actually like the easy part!*

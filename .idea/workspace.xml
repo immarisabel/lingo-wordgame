@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="62aff10f-9d27-44bd-869e-eb4f55912368" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/wordgame/GameBody.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordgame/GameBody.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/wordgame/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordgame/Home.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/wordgame/Scores.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordgame/Scores.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scores.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scores.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,9 +47,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
-  <component name="RunManager" selected="Application.Scores">
+  <component name="RunManager" selected="Application.Home">
     <configuration name="Home" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Home" />
       <module name="wordgame" />
@@ -90,16 +96,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scores.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
