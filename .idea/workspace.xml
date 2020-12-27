@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62aff10f-9d27-44bd-869e-eb4f55912368" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scores.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wordgame/GameBody.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordgame/GameBody.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wordgame/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordgame/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wordgame/Scores.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scores.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scores.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RunManager" selected="Application.Scores">
     <configuration name="Home" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -91,19 +84,9 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scores.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
