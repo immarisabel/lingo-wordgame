@@ -150,9 +150,11 @@ public class GameBody {
             }
         }
         System.out.println("Game Over!" + "\n");
+        System.out.println("Your final score is : " + score + "\n");
         finalScore = score;
         finalScoreDate = setDate();
         if (finalScore > Scores.getHighScore()){
+            System.out.println("New High Score!" + "\n");
         setHighScore();}
         life = 3;
 
