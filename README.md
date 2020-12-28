@@ -1,9 +1,10 @@
  # Lingo Word Game
  ## Project 01
- ### NOV 26, 2020
+ ### NOV 26, 2020 to DEC 28, 2020
 
 This is my first repository. I am totally new to this, so ignore most here unless you think I can learn from it.
 
+- :heavy_check_mark: I will mark this project as finished on DEC 28,2020. I decided to start the GUI version on a different one so as not to break this one.
 
 *(these notes are for me to use as reference of my learning and keep the code clean once something is fixed.*
 - [ ] these are found issues to work on, found under the date of header
@@ -18,15 +19,8 @@ This is my first repository. I am totally new to this, so ignore most here unles
 **TO DO:**
 - :heavy_check_mark: fix the loop to not ask again the difficulty nor try again but continue until player presses end game on GIU (25/12)
 - *25/12 : I cleaned it up after 3 days of work! It runs! not smoothly yet. But it runs!*
-- [ ] do a give up option everytime you fail 
-- [ ] Integrate a file 
-- [ ] Score per guess 10 
-- [ ] Score per hint -5
-- [ ] 5 word streak = +50 bonus
-- [ ] 10 word streak = +100 bonus
-- [ ] Words score after the 10th streak is 20 points instead of 10
-- [ ] If streak finishes, then score per word is again 10
-- [ ] End game? Then display total and store in user name
+
+
 
 # challenges to fix
 - [ ] fixed the flow but now it counts the invalid input in the attempts. That will be the last thing I need to fix before building the scoring system.

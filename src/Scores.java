@@ -19,22 +19,6 @@ public class Scores
 	static String date = null;
 
 
-	/* TODO MAIN delete when working code and return the Home.java to main */
-
-	public static void scoringexample(String[] args) throws FileNotFoundException {
-	System.out.println("DATE : " + GameBody.finalScoreDate);
-	System.out.println("FINAL SCORE : " + GameBody.finalScore);
-	System.out.println("HIGH SCORE : " + getHighScore());
-
-// FLOW OK! (To be used in main game file)
-		if (GameBody.score > getHighScore()){
-			System.out.println("New high score!");
-			setHighScore();
-		}
-		else {System.out.println("your scores was ok.");}
-}
-
-
 	// METHOD to read high score from file
 	public static int getHighScore(){
 		int n = 1;
@@ -74,11 +58,6 @@ public class Scores
 		}
 
 	}}
-
-
-
-	//GET RESULT FROM GAME
-	//public static int NewScore() {newScore = 35  ; return newScore;}}
 
 
 
