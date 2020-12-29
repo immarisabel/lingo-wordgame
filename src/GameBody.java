@@ -18,19 +18,15 @@ public class GameBody {
     static int finalScore = 0;
     static String finalScoreDate = null;
 
-    public static int Mode(int tries)
+    // METHOD TO SELECT LEVEL
+    public static int Mode()
     {
-
         Scanner scan = new Scanner(System.in);
-
         // SELECT LEVEL
         level = scan.nextInt();
-
-
         if(level == 0 || level > 3) {
             System.out.println("Invalid level entered, please 1, 2 or 3 only.");
         }
-
         if (level == 3)
         {
             GameBody.tries = +5;
@@ -40,100 +36,66 @@ public class GameBody {
         }else if(level == 1)
         {
             GameBody.tries = +20;}
-
-
-
          return GameBody.tries;
 
     }
 
-    public static String setDate( ) {
-        String pattern = "dd-MM-yyyy";
-        SimpleDateFormat sdf = new SimpleDateFormat(pattern);
-        finalScoreDate = sdf.format(new Date());
-        return finalScoreDate;
-    }
-
+    // MAIN GAME
     public static void StartGame()
     {
-
         System.out.println("Welcome! \nLet's set up!\s");
         System.out.println("Current Score : " + (Scores.getHighScore()) + " on " +(Scores.getHighScoreDate())  + "\n");
-
         System.out.println("""
 				1. Easy\s
 				2. Medium\s
 				3. Hard\s
 				Enter a number for mode:\s""");
-
-         tries = Mode(tries);
+        int tries = Mode();
 // START LOOP
         while(life >=1)
         {
-
-// random word selected
             String strWord = Initializer.InitializeFromArray();
-
-
-// TODO delete when finished
-  //   System.out.println("***DEBUG chosen word is: \n    >>> " + strWord + " <<<\n");
-/////////////// /////////////// /////////////// /////////////// ///////////////
-
             System.out.println("Word " + gameNumber++);
             String wordGuessed = "";
 
             for (Attempt = 1; Attempt <= tries; Attempt++)
             {
                 Scanner guessing = new Scanner(System.in);
-
             Validator eval = new Validator();
             char[] cArray = new char[5];
 // GUESS THE WORD
             System.out.println("Guess the word with 5 letters");
             wordGuessed = guessing.nextLine();
 // CHECK LENGTH
-                if (eval.CheckLength(wordGuessed, len))
-                {
-
-                } else
-                {
-
+                if (eval.CheckLength(wordGuessed, len)) { }
+                else {
                     System.out.println("Please only write a word with 5 letters.");
                     continue;
                 }
-
                 if (wordGuessed.equals(strWord))
                 {
                     break;
-
                 } else
                 {
-
                     System.out.println("\nNice try for Attempt Number " + (Attempt) + " !" + "\nTry again.\n"
                             + "Attempts left: " + (tries - Attempt) + "\n");
                 }
                 for (int i = 0; i < 5; i++)
                 {
-
                     if (wordGuessed.toCharArray()[i] == strWord.toCharArray()[i])
                     {
-
                         cArray[i] = strWord.toCharArray()[i];
                     } else{
                         cArray[i] = '?';}
                 }
-
                 System.out.println("Your attempt is now something like " + String.valueOf(cArray));
             }
-
 // RESULT
             String result = (wordGuessed.equals(strWord)) ? "\nYES! Good job!"
                     : "\nNop. Sorry! The word was " + ">>>" + strWord + "<<<" + ".";
             System.out.println(result);
-
 // CREDITS
             if (wordGuessed.equals(strWord))
-
             {
                 if(gameNumber < 10){
                 score = score+scoreMultiplier;}
@@ -146,7 +108,6 @@ public class GameBody {
             {
                 life--;
                 System.out.println("Credits : " + life + "\n");
-
             }
         }
         System.out.println("Game Over!" + "\n");
@@ -157,11 +118,17 @@ public class GameBody {
             System.out.println("New High Score!" + "\n");
         setHighScore();}
         life = 3;
-
         }
 
-        // TODO do not write if score is less than highschore!
+    // METHOD TO SET DATE FOR SCORE
+    public static String setDate( ) {
+        String pattern = "dd-MM-yyyy";
+        SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+        finalScoreDate = sdf.format(new Date());
+        return finalScoreDate;
+    }
 
+    // METHOD TO SET HIGH SCORE
     public static void setHighScore() {
         try {
             String filePath ="scores.txt";

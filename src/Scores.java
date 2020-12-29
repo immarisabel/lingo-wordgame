@@ -1,7 +1,3 @@
-// TO USE: System.out.println(dtf.format(now)); <- TIME DATE
-// TO USE:
-
-
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -12,14 +8,14 @@ import java.util.stream.Stream;
 public class Scores
 {
 	// VARIABLES
-
-	//static int newScore = 0;
-	static int highScore = 0;
-	static String filePath ="scores.txt";
 	static String date = null;
+	static int highScore = 0;
+
+	// FILE for storing score
+	static String filePath ="scores.txt";
 
 
-	// METHOD to read high score from file
+	// METHODS to read high score from file
 	public static int getHighScore(){
 		int n = 1;
 		highScore = 0;
@@ -31,7 +27,6 @@ public class Scores
 		}
 		return highScore;
 	}
-
 	public static String getHighScoreDate(){
 		int n = 0;
 		GameBody.finalScoreDate = null;
@@ -44,20 +39,8 @@ public class Scores
 		return date;
 	}
 
-	// WRITER SCORE TO FILE
-	public static void setHighScore() {
-		try {
-			FileWriter myWriter = new FileWriter(filePath);
-			myWriter.write(date + "\n");
-			myWriter.write(Integer.toString(GameBody.finalScore));
-			myWriter.close();
-			System.out.println("Successfully wrote to the file.");
-		} catch (IOException e) {
-			System.out.println("An error occurred.");
-			e.printStackTrace();
-		}
 
-	}}
+	}
 
 
 
