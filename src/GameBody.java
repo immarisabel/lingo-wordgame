@@ -16,7 +16,11 @@ public class GameBody {
     static int scoreMultiplierTwo = 30;
     static int score = 0;
     static int finalScore = 0;
+    static String playerNameimput = "";
     static String finalScoreDate = null;
+    static String currentNameScore = Scores.hsNameData();
+    static String currentDateScore = Scores.hsDateData();
+    static int currentHScore = Scores.hsScoreData();
 
     // METHOD TO SELECT LEVEL
     public static int Mode()
@@ -29,7 +33,7 @@ public class GameBody {
         }
         if (level == 3)
         {
-            GameBody.tries = +5;
+            GameBody.tries = +1;
         } else if(level == 2)
         {
             GameBody.tries = +10;
@@ -43,13 +47,13 @@ public class GameBody {
     // MAIN GAME
     public static void StartGame()
     {
-        System.out.println("Welcome! \nLet's set up!\s");
-        System.out.println("Current Score : " + (Scores.getHighScore()) + " on " +(Scores.getHighScoreDate())  + "\n");
-        System.out.println("""
-				1. Easy\s
-				2. Medium\s
-				3. Hard\s
-				Enter a number for mode:\s""");
+        System.out.println("Welcome! \nLet's set up!\n");
+        System.out.println("What is your name?\n");
+        Scanner name = new Scanner(System.in);
+        playerNameimput = name.nextLine();
+
+        System.out.println("Current Score:\n>>> " + ( Scores.hsScoreData()) + " <<<\nby " + (currentNameScore) +" on " +(currentDateScore) + "\n");
+        System.out.println("1. Easy (20 attempts)\n2. Medium  (10 attempts)\n3. Hard (5 attempts)\nEnter a number for mode:\n");
         int tries = Mode();
 // START LOOP
         while(life >=1)
@@ -65,6 +69,8 @@ public class GameBody {
             char[] cArray = new char[5];
 // GUESS THE WORD
             System.out.println("Guess the word with 5 letters");
+
+            System.out.println("\n DEBUG: " +strWord +"\n");
             wordGuessed = guessing.nextLine();
 // CHECK LENGTH
                 if (eval.CheckLength(wordGuessed, len)) { }
@@ -114,35 +120,46 @@ public class GameBody {
         System.out.println("Your final score is : " + score + "\n");
         finalScore = score;
         finalScoreDate = setDate();
-        if (finalScore > Scores.getHighScore()){
+        if (finalScore > Scores.hsScoreData()){
             System.out.println("New High Score!" + "\n");
-        setHighScore();}
+        Scores.addData();
+            }
         life = 3;
         }
 
     // METHOD TO SET DATE FOR SCORE
     public static String setDate( ) {
-        String pattern = "dd-MM-yyyy";
+        String pattern = "DD.MM.YYYY";
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
         finalScoreDate = sdf.format(new Date());
         return finalScoreDate;
     }
 
-    // METHOD TO SET HIGH SCORE
-    public static void setHighScore() {
-        try {
-            String filePath ="scores.txt";
-            FileWriter myWriter = new FileWriter(filePath);
-            myWriter.write(finalScoreDate + "\n");
-            myWriter.write(Integer.toString(finalScore));
-            myWriter.close();
-            System.out.println("Successfully wrote to the file.");
+    public static void finalScoreData (int ID, String name, int score, String date){
+        ID = ID++;
+        name = playerNameimput;
+        score = finalScore;
+        date = finalScoreDate;
 
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
-}}
+    }
+
+
+    // METHOD TO SET HIGH SCORE
+//    public static void setHighScore() {
+//        try {
+//            String filePath ="scores.txt";
+//            FileWriter myWriter = new FileWriter(filePath);
+//            myWriter.write(finalScoreDate + "\n");
+//            myWriter.write(Integer.toString(finalScore));
+//            myWriter.close();
+//            System.out.println("Successfully wrote to the file.");
+//
+//        } catch (IOException e) {
+//            System.out.println("An error occurred.");
+//            e.printStackTrace();
+//        }
+//}
+}
 
 
 

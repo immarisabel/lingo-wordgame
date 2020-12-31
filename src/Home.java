@@ -6,7 +6,9 @@ public class Home
 
 	public static void main(String[] args)
 	{
+
 		new Home();
+		Scores.hsData();
 		@SuppressWarnings("resource")
 		Scanner play = new Scanner(System.in);
 		System.out.println("Wanna play ? \n >>> #1 YES\n >>> #2 NO\n type 1 or 2");

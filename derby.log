@@ -1,0 +1,18 @@
+----------------------------------------------------------------
+Thu Dec 31 16:28:01 CET 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0176-b969-b5f5-0000005e0c18 
+on database directory C:\Users\Administrator\Desktop\PROJECTS OFFICIAL\2020\wordgame\scoreData with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@b06a1d09 
+Loaded from file:/C:/Users/Administrator/Desktop/PROJECTS%20OFFICIAL/derby%20jar%20files/derby.jar
+java.vendor=AdoptOpenJDK
+java.runtime.version=11.0.9+11
+java.fullversion=11.0.9+11
+JRE 11 Windows 10 amd64-64-Bit Compressed References 20201022_795 (JIT enabled, AOT enabled)
+OpenJ9   - 0394ef754
+OMR      - 582366ae5
+JCL      - 3b09cfd7e9 based on jdk-11.0.9+11
+user.dir=C:\Users\Administrator\Desktop\PROJECTS OFFICIAL\2020\wordgame
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
