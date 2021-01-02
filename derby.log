@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Thu Dec 31 16:28:01 CET 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0176-b969-b5f5-0000005e0c18 
-on database directory C:\Users\Administrator\Desktop\PROJECTS OFFICIAL\2020\wordgame\scoreData with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@b06a1d09 
+Fri Jan 01 13:38:47 CET 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0176-bdf5-21db-0000004e0f48 
+on database directory C:\Users\Administrator\Desktop\PROJECTS OFFICIAL\2020\wordgame\scoreData with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@be763b3f 
 Loaded from file:/C:/Users/Administrator/Desktop/PROJECTS%20OFFICIAL/derby%20jar%20files/derby.jar
 java.vendor=AdoptOpenJDK
 java.runtime.version=11.0.9+11

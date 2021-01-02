@@ -62,7 +62,7 @@ public class Scores
 			try (Connection connection = DriverManager.getConnection(CONNECTION);
 				 Statement statement = connection.createStatement()) {
 				//create database with executeUpdate
-				statement.executeUpdate("CREATE TABLE scoreDB (ID int, name VARCHAR(45) NOT NULL PRIMARY KEY, date DATE, score int)");
+				statement.executeUpdate("CREATE TABLE scoreDB (name VARCHAR(45), date DATE NOT NULL PRIMARY KEY, score INTEGER)");
 				System.out.println(">>>>>>>> Database created");
 			} catch (SQLException e) {
 				e.printStackTrace();
@@ -76,11 +76,15 @@ public class Scores
 		 * put data in the database, use the same try-resource
 		 */
 		try (Connection connection = DriverManager.getConnection(CONNECTION);
-			 Statement statement = connection.createStatement()) {
+						 Statement statement = connection.createStatement()) {
+			//int newScoreID = GameBody.finalScoreID();
+			String newName = GameBody.finalScoreName();
+			String newDate = GameBody.setDate();
+			int newScore = GameBody.finalScoreScore();
 			//put data in database with executeUpdate
 			//statement.executeUpdate("DELETE FROM scoreDB WHERE name = 'Original Player'");
-// TODO fix how to write the date from variables from a method.
-			statement.executeUpdate("INSERT INTO scoreDB VALUES (GameBody.finalScoreData(ID), 'GameBody.finalScoreData(name)', 'GameBody.finalScoreData(date)', GameBody.finalScoreData(score)");
+// TODO fix how to write the data from variables from a method.
+			statement.executeUpdate("INSERT INTO scoreDB VALUES ('newName', 'newDate', 'newScore')");
 			System.out.println(">>>>>>>> Database updated");
 		} catch (SQLException e) {
 			e.printStackTrace();

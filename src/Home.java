@@ -8,7 +8,11 @@ public class Home
 	{
 
 		new Home();
-		Scores.hsData();
+		//System.out.println(GameBody.finalScoreID());
+		Scores.addData();
+		//Scores.scoreData();
+		//Scores.delData();
+
 		@SuppressWarnings("resource")
 		Scanner play = new Scanner(System.in);
 		System.out.println("Wanna play ? \n >>> #1 YES\n >>> #2 NO\n type 1 or 2");

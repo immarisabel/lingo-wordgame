@@ -16,6 +16,7 @@ public class GameBody {
     static int scoreMultiplierTwo = 30;
     static int score = 0;
     static int finalScore = 0;
+    static String name = "";
     static String playerNameimput = "";
     static String finalScoreDate = null;
     static String currentNameScore = Scores.hsNameData();
@@ -135,13 +136,21 @@ public class GameBody {
         return finalScoreDate;
     }
 
-    public static void finalScoreData (int ID, String name, int score, String date){
-        ID = ID++;
-        name = playerNameimput;
-        score = finalScore;
-        date = finalScoreDate;
+//    public static int finalScoreID (){
+//        int ID = 1;
+//        ID++;
+//        return ID;
+//    }
+    public static String finalScoreName(){
 
+        name = playerNameimput;
+        return name;
     }
+    public static int finalScoreScore (){
+      score = finalScore;
+      return score;
+    }
+
 
 
     // METHOD TO SET HIGH SCORE
