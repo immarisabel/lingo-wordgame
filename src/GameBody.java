@@ -34,7 +34,7 @@ public class GameBody {
         }
         if (level == 3)
         {
-            GameBody.tries = +1;
+            GameBody.tries = +5;
         } else if(level == 2)
         {
             GameBody.tries = +10;
@@ -70,7 +70,7 @@ public class GameBody {
 // GUESS THE WORD
             System.out.println("Guess the word with 5 letters");
 
-            System.out.println("\n DEBUG: " +strWord +"\n");
+            //System.out.println("\n DEBUG: " +strWord +"\n");
             wordGuessed = guessing.nextLine();
 // CHECK LENGTH
                 if (eval.CheckLength(wordGuessed, len)) { }
