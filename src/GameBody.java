@@ -46,14 +46,13 @@ public class GameBody {
     }
 
     // MAIN GAME
-    public static void StartGame()
-    {
+    public static void StartGame() throws ClassNotFoundException {
         System.out.println("Welcome! \nLet's set up!\n");
         System.out.println("What is your name?\n");
         Scanner name = new Scanner(System.in);
         playerNameimput = name.nextLine();
 
-        System.out.println("Current Score:\n>>> " + ( Scores.hsScoreData()) + " <<<\nby " + (currentNameScore) +" on " +(currentDateScore) + "\n");
+        System.out.println("Current Score:\n>>> " + ( Scores.getHSscore()) + " <<<\nby " + (Scores.getHSname())+"\n");
         System.out.println("1. Easy (20 attempts)\n2. Medium  (10 attempts)\n3. Hard (5 attempts)\nEnter a number for mode:\n");
         int tries = Mode();
 // START LOOP
@@ -123,7 +122,7 @@ public class GameBody {
         finalScoreDate = setDate();
         if (finalScore > Scores.hsScoreData()){
             System.out.println("New High Score!" + "\n");
-        Scores.addData();
+        Scores.addNS();
             }
         life = 3;
         }

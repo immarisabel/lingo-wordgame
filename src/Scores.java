@@ -1,29 +1,10 @@
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.stream.Stream;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
-/* SCORE MANAGEMENT METHODS TO USE
-Scores.scoreData(); //create table, run once only. Need to figure out how on first run. Or do an if statement.
-Scores.hsScoreData(); // score int
-Scores.hsDateData(); // date String YYYY-MM-DD
-Scores.hsNameData(); // name (PK)
-Scores.addData(); // update scores
-Scores.delData(); // only for testing purposes. Will delete after.
-ID int = unique ID++
-int ID = 1;
-ID = ID++;
-*/
+import java.sql.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 
 
 public class Scores
 {
-
 // METHODS FOR USING DATA
 	static String date = "";
 	static String name = "";
@@ -38,106 +19,149 @@ public class Scores
 		return name;
 	}
 
-
-	/*MAIN DATABASE CODE >>>>> DO NOT TOUCH <<<<<*/
-
-
-	static final String CONNECTION = "jdbc:derby:scoreData;create=true";
-
-
-	public static void scoreData() {
-
-			/*
-			 * use this line to define which database protocol want to use
-			 * create=true line means if the ExampleDatabase is not exists,
-			 * it will be created.
-			 */
-
-			/*
-			 * use try-resources to handle the database connection easly.
-			 * if you declare your connection and your statement in the
-			 * try-resource parentheses it will be closed all connetion
-			 * automatically after the program is quit from the try-catch block
-			 */
-			try (Connection connection = DriverManager.getConnection(CONNECTION);
-				 Statement statement = connection.createStatement()) {
-				//create database with executeUpdate
-				statement.executeUpdate("CREATE TABLE scoreDB (name VARCHAR(45), date DATE NOT NULL PRIMARY KEY, score INTEGER)");
-				System.out.println(">>>>>>>> Database created");
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
+	public static void createTable() throws ClassNotFoundException {
+		Class.forName("org.sqlite.JDBC");
+		Connection connection = null;
+		try
+		{
+			// create a database connection
+			connection = DriverManager.getConnection("jdbc:sqlite:scoresDB.db");
+			Statement statement = connection.createStatement();
+			statement.setQueryTimeout(30);  // set timeout to 30 sec.
+			statement.executeUpdate("drop table if exists scores");
+			statement.executeUpdate("create table scores (id integer PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, name string, score integer, date string)");
+			statement.executeUpdate("insert into scores values(NULL, 'OP', 10, '02.01.2021')");
+					}
+		catch(SQLException e)
+		{
+			// if the error message is "out of memory",
+			// it probably means no database file is found
+			System.err.println(e.getMessage());
 		}
-
-	public static void addData() {
-
-
-		/*
-		 * put data in the database, use the same try-resource
-		 */
-		try (Connection connection = DriverManager.getConnection(CONNECTION);
-						 Statement statement = connection.createStatement()) {
-			//int newScoreID = GameBody.finalScoreID();
-			String newName = GameBody.finalScoreName();
-			String newDate = GameBody.setDate();
-			int newScore = GameBody.finalScoreScore();
-			//put data in database with executeUpdate
-			//statement.executeUpdate("DELETE FROM scoreDB WHERE name = 'Original Player'");
-// TODO fix how to write the data from variables from a method.
-			statement.executeUpdate("INSERT INTO scoreDB VALUES ('newName', 'newDate', 'newScore')");
-			System.out.println(">>>>>>>> Database updated");
-		} catch (SQLException e) {
-			e.printStackTrace();
+		finally
+		{
+			try
+			{
+				if(connection != null)
+					connection.close();
+			}
+			catch(SQLException e)
+			{
+				// connection close failed.
+				System.err.println(e.getMessage());
+			}
 		}
 	}
 
-	public static void hsData() {
+	public static void addNS() throws ClassNotFoundException {
+		Class.forName("org.sqlite.JDBC");
+		String newName = GameBody.finalScoreName();
+		String newDate = GameBody.setDate();
+		int newScore = GameBody.finalScoreScore();
+		Connection connection = null;
+		try
+		{
+			connection = DriverManager.getConnection("jdbc:sqlite:scoresDB.db");
+			Statement statement = connection.createStatement();
+			statement.setQueryTimeout(30);
+			PreparedStatement prep = connection.prepareStatement("INSERT INTO scores (name, score, date) VALUES (?,?,?)"); /* TIME FORMAT! */
+			prep.setString(1, newName);
+			prep.setInt(2, newScore);
+			prep.setString(3, newDate);
+			prep.execute();
 
-
-		 //query data from database, use the same try-resource with executeQuery
-
-		try (Connection connection = DriverManager.getConnection(CONNECTION);
-			 Statement statement = connection.createStatement();
-			 ResultSet resultSet = statement.executeQuery("SELECT * FROM scoreDB")) {
-			//query data from database into a ResultSet
-			while (resultSet.next()) {
-				//System.out.println(resultSet.getInt("score"));
-				score = (resultSet.getInt("score"));
-				//System.out.println(resultSet.getString("date"));
-				date = (resultSet.getString("date"));
-				//System.out.println(resultSet.getString("name"));
-				name = (resultSet.getString("name"));
+			System.out.println(">>>>>>>> High Score Updated");
+		}
+		catch(SQLException e)
+		{
+			// if the error message is "out of memory",
+			// it probably means no database file is found
+			System.err.println(e.getMessage());
+		}
+		finally
+		{
+			try
+			{
+				if(connection != null)
+					connection.close();
 			}
-			//System.out.println(">>>>>>>> Database query completed");
-
-		} catch (SQLException e) {
-			e.printStackTrace();
+			catch(SQLException e)
+			{
+				// connection close failed.
+				System.err.println(e.getMessage());
+			}
 		}
 	}
 
-	public static void delData() {
+	public static int getHSscore() throws ClassNotFoundException {
 
-		/*
-			 * delete table from database with executeUpdate
-			 */
-			try(Connection connection = DriverManager.getConnection(CONNECTION);
-				Statement statement = connection.createStatement()){
-				statement.executeUpdate("DROP TABLE scoreDB");
-				System.out.println("Database deleted");
-			}catch(SQLException e) {
-				e.printStackTrace(); }
+		Class.forName("org.sqlite.JDBC");
+		Connection connection = null;
+		try		{
+			connection = DriverManager.getConnection("jdbc:sqlite:scoresDB.db");
+			Statement statement = connection.createStatement();
+			statement.setQueryTimeout(30);
+			String q = "SELECT * FROM scores WHERE score = (SELECT MAX(score) FROM scores)";
+			ResultSet rs = statement.executeQuery(q);
+
+			if(rs.next())
+			{
+				return rs.getInt("score");
+			}
+
 		}
+		catch(SQLException e)		{
+			System.err.println(e.getMessage());
+		}
+		finally		{
+			try
+			{
+				if(connection != null)
+					connection.close();
+			}
+			catch(SQLException e)
+			{
+				// connection close failed.
+				System.err.println(e.getMessage());
+			}
+		}
+		return 0;
+	}
 
+	public static String getHSname() throws ClassNotFoundException {
 
+		Class.forName("org.sqlite.JDBC");
+		Connection connection = null;
+		try		{
+			connection = DriverManager.getConnection("jdbc:sqlite:scoresDB.db");
+			Statement statement = connection.createStatement();
+			statement.setQueryTimeout(30);
+			String q = "SELECT * FROM scores WHERE score = (SELECT MAX(score) FROM scores)";
+			ResultSet rs = statement.executeQuery(q);
 
+			if(rs.next())
+			{
+				return (rs.getString("name"));
+			}
 
-
-
-
-
-
-
-
+		}
+		catch(SQLException e)		{
+			System.err.println(e.getMessage());
+		}
+		finally		{
+			try
+			{
+				if(connection != null)
+					connection.close();
+			}
+			catch(SQLException e)
+			{
+				// connection close failed.
+				System.err.println(e.getMessage());
+			}
+		}
+		return null;
+	}
 
 
 

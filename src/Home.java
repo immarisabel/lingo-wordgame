@@ -4,14 +4,11 @@ public class Home
 {
 
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) throws ClassNotFoundException {
 
 		new Home();
 		//System.out.println(GameBody.finalScoreID());
-		Scores.addData();
-		//Scores.scoreData();
-		//Scores.delData();
+		//Scores.createTable();
 
 		@SuppressWarnings("resource")
 		Scanner play = new Scanner(System.in);

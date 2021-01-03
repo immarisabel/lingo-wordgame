@@ -13,7 +13,7 @@ public class Initializer
 	{
 		Random rand = new Random();
 		Scanner scan = new Scanner(System.in);
-		File file = new File("C:\\Users\\Administrator\\Desktop\\PROJECTS OFFICIAL\\2020\\wordgame\\src\\words.dic");
+		File file = new File("src/words.dic");
 		Scanner s = null;
 		try
 		{

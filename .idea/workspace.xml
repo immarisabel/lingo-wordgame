@@ -2,97 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62aff10f-9d27-44bd-869e-eb4f55912368" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scoresDB.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoresDB.sqbpro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sqliteSample.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/derby.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/derby.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/wordgame/GameBody.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordgame/GameBody.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/wordgame/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordgame/Home.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/wordgame/Initializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordgame/Initializer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/wordgame/Scores.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordgame/Scores.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/db.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/log/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/log/log.ctrl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/log/log1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/log/logmirror.ctrl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c10.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c101.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c111.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c121.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c130.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c141.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c150.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c161.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c171.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c180.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c191.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c1a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c1b1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c1c0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c1d1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c1e0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c1f1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c20.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c200.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c211.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c221.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c230.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c241.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c251.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c260.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c271.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c281.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c290.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c2a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c2b1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c2c1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c2d0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c2e1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c2f0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c300.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c31.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c311.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c321.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c331.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c340.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c351.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c361.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c371.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c380.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c391.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c3a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c3b1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c3c0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c3d1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c3e1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c3f1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c400.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c41.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c411.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c421.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c430.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c441.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c451.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c461.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c470.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c481.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c490.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c4a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c51.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c60.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c71.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c81.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/c90.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/ca1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/cb1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/cc0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/cd1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/ce1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/seg0/cf0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreData/service.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoresDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/scoresDB.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameBody.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Initializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordgame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wordgame.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,16 +55,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../derby jar files/derbyshared.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="notes" value="https://db.apache.org/derby/docs/10.15/ref/&#10;&#10; Columns of type 'INTEGER' cannot hold values of type 'CHAR'. &#10;https://stackoverflow.com/questions/37341441/columns-of-type-integer-cannot-hold-values-of-type-char&#10;check last answert for int" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15315934" />
     <property name="project.structure.side.proportion" value="0.20292208" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Debugger" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\OneDrive\PROGRAMMING\2020\wordgame\src" />
       <recent name="C:\Users\Administrator\Desktop\PROJECTS OFFICIAL\2020\wordgame\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -192,52 +119,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GameBody.java</url>
-          <line>125</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GameBody.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scores.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scores.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scores.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Scores.java</url>
-          <line>71</line>
-          <properties class="Scores" method="addData">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Scores.java</url>
-          <line>47</line>
-          <properties class="Scores" method="scoreData">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
