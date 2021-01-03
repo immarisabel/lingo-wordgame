@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62aff10f-9d27-44bd-869e-eb4f55912368" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scoresDB.sqbpro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqliteSample.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/derby.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/derby.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wordgame/GameBody.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordgame/GameBody.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wordgame/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordgame/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wordgame/Initializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordgame/Initializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wordgame/Scores.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordgame/Scores.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoresDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/scoresDB.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Initializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordgame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wordgame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

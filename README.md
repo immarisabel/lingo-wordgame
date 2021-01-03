@@ -1,8 +1,12 @@
- # Lingo Word Game
+**`This repository is a WIP, not because it is not done, but because it will never be done. This code is my sandbox to test different ideas and tools to use on other projects. The simplicity of the game allows me to focus on the functionality.**   
+`
+# Lingo Word Game
  ## Project 01
  ### NOV 26, 2020 to DEC 28, 2020
 
 This is my first repository. I am totally new to this, so ignore most here unless you think I can learn from it.
+
+
 
 - :heavy_check_mark: I will mark this project as finished on DEC 28,2020. I decided to start the GUI version on a different one so as not to break this one.
 
@@ -71,13 +75,13 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - :pencil2: *21/12 began also working on this. Need to get first the chosen word to display if it is wrong before being able to implement a hint. It is still random again instead of the same.* 
 - :pencil2: *22/12 can now display the correct word if fail. Will not do more hints after revising. As already showing which letters were right is a hint.*
 
-- [ ] multiplayer function
+- [ ] multiplayer function (reconsidering, might add for practice)
 
-- [ ] scoring system 
+- :heavy_check_mark: scoring system 
 - :pencil2: *19/12 working on this now*
 - :pencil2: *21/12 began building the class for this but need to research a bit more on how to use it.*
-
 - :pencil2: store the player's progress and scores
+- :pencil2: *2/1/21 added score system via SQlite*
 
 - [ ] GUI
 - :pencil2: *21/12 Also began working on the GUI and learning a lot form it, the GUI seems actually like the easy part!*
