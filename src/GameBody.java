@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class GameBody {
 
+
     static int Attempt = 0;
     static int len = 5;
     static int level = 0;
@@ -29,19 +30,25 @@ public class GameBody {
         Scanner scan = new Scanner(System.in);
         // SELECT LEVEL
         level = scan.nextInt();
-        if(level == 0 || level > 3) {
-            System.out.println("Invalid level entered, please 1, 2 or 3 only.");
+        while(scan.hasNextInt())
+        {
+
+            if (level == 0 || level > 3) {
+                System.out.println("Invalid level entered, please 1, 2 or 3 only.");
+            }
+
+
+            if (level == 3) {
+                GameBody.tries = +5;
+            } else if (level == 2) {
+                GameBody.tries = +10;
+            } else if (level == 1) {
+                GameBody.tries = +20;
+            }
+
         }
-        if (level == 3)
-        {
-            GameBody.tries = +5;
-        } else if(level == 2)
-        {
-            GameBody.tries = +10;
-        }else if(level == 1)
-        {
-            GameBody.tries = +20;}
-         return GameBody.tries;
+        {System.out.println("error!");}
+        return GameBody.tries;
 
     }
 
