@@ -41,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../2021/Journal V01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../2021/JournalP02" />
     <property name="notes" value="https://db.apache.org/derby/docs/10.15/ref/&#10;&#10; Columns of type 'INTEGER' cannot hold values of type 'CHAR'. &#10;https://stackoverflow.com/questions/37341441/columns-of-type-integer-cannot-hold-values-of-type-char&#10;check last answert for int" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15315934" />
@@ -105,5 +105,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -2,6 +2,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class GameBody {
@@ -29,15 +30,16 @@ public class GameBody {
     {
         Scanner scan = new Scanner(System.in);
         // SELECT LEVEL
+
         level = scan.nextInt();
-        while(scan.hasNextInt())
+
+       do
+
         {
 
             if (level == 0 || level > 3) {
                 System.out.println("Invalid level entered, please 1, 2 or 3 only.");
             }
-
-
             if (level == 3) {
                 GameBody.tries = +5;
             } else if (level == 2) {
@@ -45,14 +47,14 @@ public class GameBody {
             } else if (level == 1) {
                 GameBody.tries = +20;
             }
+        } while(scan.hasNextInt());
+         {System.out.println("----ERROR----");}
 
-        }
-        {System.out.println("error!");}
-        return GameBody.tries;
+return GameBody.tries;
+}
 
-    }
 
-    // MAIN GAME
+// MAIN GAME
     public static void StartGame() throws ClassNotFoundException {
         System.out.println("Welcome! \nLet's set up!\n");
         System.out.println("What is your name?\n");
