@@ -1,3 +1,4 @@
+package nl.marisabel.lingo;
 
 public class Validator
 {

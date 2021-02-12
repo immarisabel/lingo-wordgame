@@ -1,3 +1,5 @@
+package nl.marisabel.lingo;
+
 import java.util.Scanner;
 
 public class Home

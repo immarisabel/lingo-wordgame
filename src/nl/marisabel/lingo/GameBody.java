@@ -1,8 +1,7 @@
-import java.io.FileWriter;
-import java.io.IOException;
+package nl.marisabel.lingo;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class GameBody {

@@ -1,3 +1,5 @@
+package nl.marisabel.lingo;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;

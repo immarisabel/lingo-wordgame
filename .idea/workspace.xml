@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62aff10f-9d27-44bd-869e-eb4f55912368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nl/marisabel/lingo/GameBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nl/marisabel/lingo/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nl/marisabel/lingo/Initializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nl/marisabel/lingo/Scores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nl/marisabel/lingo/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/words.dic" beforeDir="false" afterPath="$PROJECT_DIR$/src/nl/marisabel/lingo/words.dic" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +58,7 @@
       <recent name="C:\Users\Administrator\Desktop\PROJECTS OFFICIAL\2020\wordgame\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\OneDrive\PROGRAMMING\2020\wordgame\src\nl\marisabel\lingo" />
       <recent name="C:\Users\Administrator\Desktop\PROJECTS OFFICIAL\2020\wordgame\lib" />
       <recent name="C:\Users\Administrator\Desktop\PROJECTS OFFICIAL\2020\wordgame" />
     </key>
