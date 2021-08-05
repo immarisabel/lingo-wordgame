@@ -72,16 +72,13 @@ This is my first repository. I am totally new to this, so ignore most here unles
 - :pencil2: *17/12 finally got the word to randomize from file!*
 
 - :heavy_check_mark: hints
-- :pencil2: *21/12 began also working on this. Need to get first the chosen word to display if it is wrong before being able to implement a hint. It is still random again instead of the same.* 
-- :pencil2: *22/12 can now display the correct word if fail. Will not do more hints after revising. As already showing which letters were right is a hint.*
+- :heavy_check_mark: *21/12 began also working on this. Need to get first the chosen word to display if it is wrong before being able to implement a hint. It is still random again instead of the same.* 
+- :heavy_check_mark: *22/12 can now display the correct word if fail. Will not do more hints after revising. As already showing which letters were right is a hint.*
 
 - [ ] multiplayer function (reconsidering, might add for practice)
 
 - :heavy_check_mark: scoring system 
-- :pencil2: *19/12 working on this now*
-- :pencil2: *21/12 began building the class for this but need to research a bit more on how to use it.*
-- :pencil2: store the player's progress and scores
-- :pencil2: *2/1/21 added score system via SQlite*
-
-- [ ] GUI
-- :pencil2: *21/12 Also began working on the GUI and learning a lot form it, the GUI seems actually like the easy part!*
+- :heavy_check_mark: *19/12 working on this now*
+- :heavy_check_mark: *21/12 began building the class for this but need to research a bit more on how to use it.*
+- :heavy_check_mark: store the player's progress and scores
+- :heavy_check_mark: *2/1/21 added score system via SQlite*
