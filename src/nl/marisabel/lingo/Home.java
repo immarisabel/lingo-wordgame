@@ -7,14 +7,12 @@ public class Home
 
 
 	public static void main(String[] args) throws ClassNotFoundException {
-		System.out.println("main");
-		
+
 		new GameBody();
-		
-		
 		
 		GameBody.StartGame();
 		
+
 		
 
 //		new Home();

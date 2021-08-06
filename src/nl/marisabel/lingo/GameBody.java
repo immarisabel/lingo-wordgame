@@ -49,7 +49,6 @@ public class GameBody {
 	@SuppressWarnings("resource")
 	public static void StartGame() throws ClassNotFoundException {
 
-		System.out.println("Game");
 
 		System.out.println("Welcome! \nLet's set up!\n");
 		System.out.println("What is your name?\n");
@@ -128,7 +127,7 @@ public class GameBody {
 		life = 3;
 	}
 
-	// METHOD TO SET DATE FOR SCORE
+// METHOD TO SET DATE FOR SCORE
 	public static String setDate() {
 		String pattern = "DD.MM.YYYY";
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
@@ -146,5 +145,5 @@ public class GameBody {
 		score = finalScore;
 		return score;
 	}
-//test
+
 }
