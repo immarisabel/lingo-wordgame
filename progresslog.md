@@ -1,3 +1,5 @@
+OLD LOG. No longer mantained. But keeping it here as refference for future implementations when I learn more.
+
 **`This repository is a WIP, not because it is not done, but because it will never be done. This code is my sandbox to test different ideas and tools to use on other projects. The simplicity of the game allows me to focus on the functionality.**   
 `
 # Lingo Word Game
