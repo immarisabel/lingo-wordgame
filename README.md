@@ -1,5 +1,8 @@
 # Lingo Word Game
 
+Archiving as Read Only for preservation. I will probably restart this with more knowledge.
+
+
 ##  Project 01
  
 ### NOV 26, 2020 to DEC 28, 2020
